@@ -15,6 +15,7 @@ var formTag = function(url, htmlOptions){
 
 	htmlOptions.action = url;
 
+    return tag('form', htmlOptions);
 };
 
 var formEnd = function(){

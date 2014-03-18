@@ -2,15 +2,15 @@ var Tag = require('./tag');
 var tag = Tag.tag,
 	tag_end = Tag.tag_end;
 
-var linkTo = function(name, url, html_options) {
+var linkTo = function(name, url, htmlOptions) {
 	name = name || '';
-	html_options = html_options || {};
-	html_options.href=url;
-	return tag('a', html_options)+name+ tag_end('a');
+	htmlOptions = htmlOptions || {};
+	htmlOptions.href=url;
+	return tag('a', htmlOptions)+name+ tag_end('a');
 };
 
 /**
  * Export helpers.
  */
 
-exports.linkTo = link_to;
+exports.link_to = linkTo;
